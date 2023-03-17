@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Exit when any command fails
+set -e
+
+RESOLUTION=$1
+TYPE=$2
+
+echo "Creating thumbnails..."
+
+for i in *."$TYPE"; do
+  convert "$i" -resize "$RESOLUTION" "${i%.*}-sm.$TYPE"
+done
+
+echo 'All done!'
