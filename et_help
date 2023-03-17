@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -e 'et_png_shrink \t Shrinks all pngs in folder in-place using pngquant'
+echo -e 'et_png_to_jpg \t Converts all pngs in folder to jpgs'
+echo -e 'et_thumbnails \t Creates thumbnails, usage: et_thumbnails 300x100 jpg'
+echo -e 'et_twittercrop \t Formats a video for upload to twitter'
+echo -e 'et_upshut \t Install updates and shut down'z
