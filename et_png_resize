@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Exit when any command fails
+set -e
+
+RESOLUTION=$1
+
+for i in *.png ; do convert "$i" -resize "$RESOLUTION" "$i"; done

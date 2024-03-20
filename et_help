@@ -2,6 +2,7 @@
 
 echo -e 'et_png_shrink \t Shrinks all pngs in folder in-place using pngquant'
 echo -e 'et_png_to_jpg \t Converts all pngs in folder to jpgs'
+echo -e 'et_png_resize \t Resizes all pngs in folder; usage et_png_resize 300x100'
 echo -e 'et_thumbnails \t Creates thumbnails, usage: et_thumbnails 300x100 jpg'
 echo -e 'et_twittercrop \t Formats a video for upload to twitter'
 echo -e 'et_update \t Install updates'
