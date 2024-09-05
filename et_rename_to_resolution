@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Exit when any command fails
+set -e
+
+TYPE=$1
+
+echo "Renames all png images to their resolution..."
+
+for filename in *.png*; do
+  inname=`convert $filename -format "%t" info:`
+  size=`convert $filename -format "%wx%h" info:`
+  mv $filename "${size}.png";
+done
+
+echo 'All done!'
