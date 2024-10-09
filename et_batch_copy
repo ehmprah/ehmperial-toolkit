@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Exit when any command fails
+set -e
+
+TYPE=$1
+SEARCH=$2
+REPLACE=$3
+
+for filename in *.$TYPE; 
+  do cp "$filename" "${filename/"$SEARCH"/"$REPLACE"}";
+done
