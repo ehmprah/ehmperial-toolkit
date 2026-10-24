@@ -3,6 +3,7 @@
 # Exit when any command fails
 set -e
 
-for i in *.mkv ; 
-  do ffmpeg -i "$i" -vcodec copy -acodec mp3 o_"$i"; 
+for i in *.mkv ; do 
+  ffmpeg -i "$i" -vcodec copy -acodec mp3 o_"$i"
+  rm "$i"
 done
