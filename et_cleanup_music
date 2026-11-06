@@ -9,6 +9,7 @@ recurse() {
         filename=$(basename "$i")
         if [[ $filename == *.m4a ]]; then
             target="$HOME/Music/${filename:4}"
+            trimmed="${target#"${target%%[![:space:]]*}"}"
             cp "$i" "$target"
             echo "Copied: $target"
         fi
